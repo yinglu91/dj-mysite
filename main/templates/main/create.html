@@ -5,9 +5,9 @@
 {% block content %}
     <h1>Create new todo list </h1>
 
-    <form  method="post" action="/create/">
+    <form  method="post" action="/create/" class="form-group">
         {% csrf_token %}
         {{form.as_p}}
-        <button type="submit" name=save">Create New</button>
+        <button type="submit" name=save" class="btn btn-success">Create New</button>
     </form>
 {% endblock %}
